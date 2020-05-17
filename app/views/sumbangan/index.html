@@ -44,7 +44,7 @@
                         {% endfor %}
                     </datalist>
                     <label for="jumlah[]">Jumlah</label>
-                    <input type="number" class="form-control" id="jumlah[]" name="jumlah[]" placeholder="Contoh: 5">
+                    <input type="number" class="form-control" id="jumlah[]" name="jumlah[]" placeholder="1, 2, 3, ...">
                     <small id="jumlah" class="form-text text-muted">dalam kg/pcs/liter.</small>
                 </div>
                 <div class="col">
@@ -60,42 +60,34 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
-        var maxField = 10; //Input fields increment limitation
-        var addButton = $('.add_button'); //Add button selector
-        var wrapper = $('.field_wrapper'); //Input field wrapper
+        var maxField = 10; 
+        var addButton = $('.add_button'); 
+        var wrapper = $('.field_wrapper'); 
         var fieldHTML = '<div><label for="jenis_sumbangan[]">Jenis Sumbangan</label><div class="row"> '+
                         '    <div class="col-11"> '+
-                        '        <input class="form-control" type="text" list="jenis_sumbangan" name="jenis_sumbangan[]" /> '+
-                        '        <datalist id="jenis_sumbangan"> '+
-                        '            <option>Beras</option> '+
-                        '            <option>Minyak Goreng</option> '+
-                        '            <option>Mie Instant</option> '+
-                        '            <option>Gula</option> '+
-                        '        </datalist> '+
+                        '        <input class="form-control" type="text" name="jenis_sumbangan[]" /> '+
                         '        <label for="jumlah">Jumlah</label> '+
-                        '        <input type="number" class="form-control" id="jumlah" name="jumlah[]" placeholder="Contoh: 5"> '+
+                        '        <input type="number" class="form-control" id="jumlah" name="jumlah[]" placeholder="1, 2, 3, ..."> '+
                         '        <small id="jumlah" class="form-text text-muted">dalam kg/pcs/liter.</small> '+
                         '    </div> '+
                         '    <div class="col"> '+
                         '        <a href="javascript:void(0);" class="remove_button btn btn-danger">-</a> '+
                         '    </div> '+
-                        '</div></div>'; //New input field html
-        var x = 1; //Initial field counter is 1
+                        '</div></div>';
+        var x = 1; 
         
-        //Once add button is clicked
         $(addButton).click(function(){
-            //Check maximum number of input fields
             if(x < maxField){ 
-                x++; //Increment field counter
-                $(wrapper).append(fieldHTML); //Add field html
+                x++;
+                $(wrapper).append(fieldHTML); 
             }
         });
         
         //Once remove button is clicked
         $(wrapper).on('click', '.remove_button', function(e){
             e.preventDefault();
-            $(this).parent('div').parent('div').parent('div').remove(); //Remove field html
-            x--; //Decrement field counter
+            $(this).parent('div').parent('div').parent('div').remove(); 
+            x--; 
         });
     });
 </script>
