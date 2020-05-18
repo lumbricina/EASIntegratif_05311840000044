@@ -21,4 +21,6 @@ klik tombol sumbangan dan data akan masuk ke database. Jika data masuk dengan ba
 ![data berhasil dimasukkan](https://github.com/lumbricina/EASIntegratif_05311840000044/blob/master/img/sumbangandataterinput.PNG)
 
 Setelah data terinput, data tersebut dapat dilihat pada halaman List Sumbangan yang memiliki tampilan berikut ini
-![enter image description here](https://github.com/lumbricina/EASIntegratif_05311840000044/blob/master/img/listsumbangan.PNG)
+![](https://github.com/lumbricina/EASIntegratif_05311840000044/blob/master/img/listsumbangann.PNG)
+![List Sumbangan halaman pertama](https://github.com/lumbricina/EASIntegratif_05311840000044/blob/master/img/listsumbangan1.PNG)
+![List Sumbangan halaman kedua](https://github.com/lumbricina/EASIntegratif_05311840000044/blob/master/img/listsumbangan2.PNG)
