@@ -1,6 +1,12 @@
 # EAS Pemrograman Integratif
 #### Agnes Lesmono 05311840000044
 Membuat Website yang terhubung dengan database untuk menginput dan melihat data yang telah masuk dengan tema Sumbangan COVID-19. 
+Secara sederhana, sistem dari website ini adalah :
+
+> Halaman Home -> Formulir Sumbangan -> Menambahkan data Sumbangan -> Melihat list data dari sumbangan yang telah diinput sebelumnya
+
+List data sumbangan tersebut dapat diakses pula melalui halaman home dan halaman formulir sumbang.
+
 Tampilan halaman pertama jika mengakses `localhost/integratif/eas/public` adalah sebagai berikut :
 ![tampilan halaman pertama](https://github.com/lumbricina/EASIntegratif_05311840000044/blob/master/img/easpublic.PNG)
 
