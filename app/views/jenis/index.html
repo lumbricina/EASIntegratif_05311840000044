@@ -18,7 +18,7 @@
                 <tbody>
                     {% for c in data %}
                   <tr>
-                    <th scope="row">{{ c.nomer }}</th>
+                    <th scope="row" style="text-align: center;">{{ c.nomer }}</th>
                     <td>{% if c.gender == TRUE %}Bapak {% else %}Ibu {% endif %}{{ c.name }}</td>
                     <td>{{ c.j_id }}</td>
                     <td>{{ c.jumlah }}</td>
